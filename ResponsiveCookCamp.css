@@ -1,0 +1,159 @@
+body {
+  font-size: 14px;
+}
+
+/*.background ➡　一括指定プロパティで、色、画像、原点と寸法、反復方法など、背景に関するすべてのスタイルプロパティを一括で設定*/
+
+/*Cookcampの一番上のロゴに対して高さと横の長さマージントップ設定*/
+.logo {
+  margin-top: 10px;
+  width: 200px;
+  margin-top: 10x;
+}
+
+
+/*通常時のコンテンツに対してマージン設定*/
+.contents {
+  margin: 30px 0px;/*上下30px 右左0px*/
+}
+
+/*検索のボタンの右側の角（上下）の角をなくして真っすぐの線を引いている*/
+.carousel-indicators > li {
+  background-color: #FFFFFF;
+}
+
+.carousel-indicators > .active {
+  background-color: #99BB22;
+}
+
+.form-control{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 6px 12px;
+}
+
+/*フォームボックスの文字設定*/
+.text-small{
+  font-size: 14px;
+}
+
+h2{
+  color: #664433;
+  border-bottom: solid 2px #D3C9C5;
+  padding-bottom: 5px;
+  padding-left: 21px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  background-image: url("icon.png");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  line-height: 1.0;
+}
+h3{
+  margin-top: 12px;
+  color: #664433;
+  font-size: 15px;
+}
+
+
+p {
+  text-indent: 1em;
+  margin-top: 5px;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.list-group-item {
+  border: none;
+  background-image: url("arrow.png");
+  background-size: 6px 10px;
+  background-repeat: no-repeat;
+  padding-left: 15px;
+  background-position: 5px center;
+}
+
+footer {
+  border-top: solid 1px #CCCCCC;
+}
+
+@media (max-width: 767px) {
+  .col-md-6 {
+    margin-top: 15px;
+  }
+
+  .top-toggler-icon {
+    margin-top: -41px;
+  }
+  
+body {
+    padding-top: 57px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    border-right: solid 1px #CCCCCC;
+  }
+
+  .navbar-nav > li:last-child > a {
+    border-right: none;
+  }
+
+  body {
+    padding-top: 141px;
+  }
+
+  article.contents:first-child {
+    margin-top: 0;
+  }    
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .contents {
+    margin: 30px 15px;
+  }
+
+  a.list-group-item {
+    border-top: dashed 1px #CCCCCC;
+  }
+
+  a.list-group-item:first-child {
+    border: none;
+  }
+
+
+}
+ 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  .background {
+     height: 450px;
+  }
+}
